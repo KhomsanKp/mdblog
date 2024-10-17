@@ -1,0 +1,1 @@
+import{m as s,f as a,g as c,h as o}from"./CX14QJuS.js";const r={class:"video-container my-5"},t=["src"],l={__name:"BlogIfram",props:["src"],setup(e){return(n,_)=>(a(),c("div",r,[o("iframe",{class:"video pa-0 ma-0",src:e.src,frameborder:"0",allowfullscreen:""},null,8,t)]))}},m=s(l,[["__scopeId","data-v-cbeda2d8"]]);export{m as default};
