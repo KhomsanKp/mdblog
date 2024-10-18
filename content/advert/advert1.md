@@ -1,1 +1,1 @@
-:blog-ad{:data='[{"src": "/images/blog_1-1.jpg", "link": ""}, {"src": "/images/blog_1-2.jpg", "link": ""}]'}
+:blog-ad{:data='[{"src": "/images/advert_2.png", "link": "https://s.shopee.co.th/4L1SZMwQ3w"}, {"src": "/images/advert_1.png", "link": "https://s.shopee.co.th/Vok03zX75"}]'}
