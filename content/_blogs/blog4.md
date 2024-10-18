@@ -25,9 +25,9 @@ createDate: 18 ตุลาคม 2567
 author: Khomsan
 ---
 
-:blog-image{src="/images/blog_4-1.jpg" alt="Realme GT7 Pro" .my-5}
+:blog-image{.my-5 alt="Realme GT7 Pro" src="/images/blog_4-1.jpg"}
 
-::blog-sheet{.mt-3 .text-h5 .font-weight-bold .mb-3}
+::blog-sheet{.mt-3.text-h5.font-weight-bold.mb-3}
 {{ $doc.title }}
 ::
 
@@ -40,9 +40,14 @@ author: Khomsan
 ::
 
 ::blog-sheet{.py-5}
-:blog-ifram{src="https://www.youtube.com/embed/1ipgMUpZnz8"}
+  :::blog-ifram{src="https://www.youtube.com/embed/1ipgMUpZnz8"}
+  :::
 ::
 
-::blog-link{link="https://www.gsmarena.com/realme_gt7_pro_gets_unboxed_underwater_just_as_reservations_start-news-64974.php" .my-3}
+::blog-link
+---
+class: my-3
+link: https://www.gsmarena.com/realme_gt7_pro_gets_unboxed_underwater_just_as_reservations_start-news-64974.php
+---
 ที่มา : GSMArena
 ::

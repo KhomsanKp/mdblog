@@ -18,7 +18,6 @@ head:
       content: Khomsan
     - name: copyright
       content: © 2024 mdblog
-
 id: blog_1
 imageUrl: /images/blog_1-1.jpg
 category: smartphone
@@ -26,9 +25,9 @@ createDate: 18 ตุลาคม 2567
 author: Khomsan
 ---
 
-:blog-image{src="/images/blog_1-1.jpg" alt="Google Pixel 9 Pro" .my-3}
+:blog-image{.my-3 alt="Google Pixel 9 Pro" src="/images/blog_1-1.jpg"}
 
-::blog-sheet{.mt-3 .text-h5 .font-weight-bold .mb-3}
+::blog-sheet{.mt-3.text-h5.font-weight-bold.mb-3}
 {{ $doc.title }}
 ::
 
@@ -36,26 +35,33 @@ author: Khomsan
 {{ $doc.description }}
 ::
 
-:blog-image{src="/images/blog_1-2.jpg" alt="Google Pixel 9 Pro"}
+:blog-image{alt="Google Pixel 9 Pro" src="/images/blog_1-2.jpg"}
 
 ::blog-sheet
 Google Pixel 9 Pro มีชิป Tensor G4 และแบตเตอรี่ 4,700 mAh พร้อมรองรับการชาร์จแบบมีสาย 27W สมาร์ทโฟนนี้ใช้ระบบปฏิบัติการ Android 14 ทันทีที่แกะกล่อง และมีหน้าจอ LTPO OLED 120Hz ขนาด 6.3 นิ้ว ความละเอียด 1,280p พร้อมรูเจาะสำหรับกล้องเซลฟี่ 42MP และเครื่องสแกนลายนิ้วมือแบบอัลตราโซนิกฝังอยู่ ด้านหลังมีกล้องอีก 3 ตัว ได้แก่ กล้องหลัก 50MP, กล้องเทเลโฟโต้ปริทรรศน์ 48MP และกล้องอัลตราไวด์ 48MP
 ::
 
-:blog-image{src="/images/blog_1-3.jpg" alt="Google Pixel 9 Pro" .my-3}
+:blog-image{.my-3 alt="Google Pixel 9 Pro" src="/images/blog_1-3.jpg"}
 
 ::blog-sheet
 คุณสามารถอ่านรีวิว
-::blog-link{link="https://www.gsmarena.com/google_pixel_9_pro-review-2745.php"}
-Google Pixel 9 Pro
-::
+
+  :::blog-link{link="https://www.gsmarena.com/google_pixel_9_pro-review-2745.php"}
+  Google Pixel 9 Pro
+  :::
+
 ของเราเพื่อเรียนรู้เพิ่มเติมเกี่ยวกับเรื่องนี้ได้ หากคุณต้องการอ่านรีวิวในรูปแบบวิดีโอ โปรดดูรายละเอียดด้านล่าง
 ::
 
 ::blog-sheet{.py-5}
-::blog-ifram{src="https://www.youtube.com/embed/bfuCOm7lKSo"}
-::
+  :::blog-ifram{src="https://www.youtube.com/embed/bfuCOm7lKSo"}
+  :::
 
-::blog-link{link="https://www.gsmarena.com/google_pixel_9_pro_india_price_preorders-news-64977.php" .my-3}
-ที่มา : GSMArena
+  :::blog-link
+  ---
+  class: my-3
+  link: https://www.gsmarena.com/google_pixel_9_pro_india_price_preorders-news-64977.php
+  ---
+  ที่มา : GSMArena
+  :::
 ::

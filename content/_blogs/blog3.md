@@ -18,7 +18,6 @@ head:
       content: Khomsan
     - name: copyright
       content: © 2024 mdblog
-
 id: blog_3
 imageUrl: /images/blog_3-1.jpg
 category: smartphone
@@ -26,9 +25,9 @@ createDate: 18 ตุลาคม 2567
 author: Khomsan
 ---
 
-:blog-image{src="/images/blog_3-1.jpg" alt="OnePlus 13" .my-5}
+:blog-image{.my-5 alt="OnePlus 13" src="/images/blog_3-1.jpg"}
 
-::blog-sheet{.mt-3 .text-h5 .font-weight-bold .mb-3}
+::blog-sheet{.mt-3.text-h5.font-weight-bold.mb-3}
 {{ $doc.title }}
 ::
 
@@ -36,7 +35,7 @@ author: Khomsan
 {{ $doc.description }}
 ::
 
-:blog-image{src="/images/blog_3-2.jpg" alt="OnePlus 13" .my-5}
+:blog-image{.my-5 alt="OnePlus 13" src="/images/blog_3-2.jpg"}
 
 ::blog-sheet
 เกาะกล้องสูญเสียการเชื่อมต่อกับกรอบของโทรศัพท์ และตอนนี้เหลือเพียงวงกลมที่ด้านซ้ายของด้านหลัง โลโก้ Hasselblad ถูกย้ายออกจากเกาะและมาอยู่ในพื้นที่ทางด้านขวา เหนือแถบโลหะตกแต่ง
@@ -46,6 +45,10 @@ author: Khomsan
 กล้องหลัก 50 MP ใช้เซ็นเซอร์ Sony Lytia LYT-808 ส่วนกล้องมุมกว้างพิเศษใช้ ISOCELL JN1 ของ Samsung ในขณะที่กล้องเทเลโฟโต้ปริทรรศน์ซูม 3 เท่าใช้เซ็นเซอร์ Sony Lytia LYT-600 OnePlus 13 จะมีหน่วยความจำมากมาย แบตเตอรี่ขนาดใหญ่ และรองรับการชาร์จแบบไร้สายด้วยแม่เหล็ก
 ::
 
-::blog-link{link="https://www.gsmarena.com/take_a_look_at_the_oneplus_13_in_all_its_glory-news-64975.php" .my-3}
+::blog-link
+---
+class: my-3
+link: https://www.gsmarena.com/take_a_look_at_the_oneplus_13_in_all_its_glory-news-64975.php
+---
 ที่มา : GSMArena
 ::

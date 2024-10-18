@@ -18,7 +18,6 @@ head:
       content: Khomsan
     - name: copyright
       content: © 2024 mdblog
-
 id: blog_5
 imageUrl: /images/blog_5-1.jpg
 category: smartphone
@@ -26,9 +25,9 @@ createDate: 18 ตุลาคม 2567
 author: Khomsan
 ---
 
-:blog-image{src="/images/blog_5-1.jpg" alt="Samsung Galaxy A16 5G" .my-5}
+:blog-image{.my-5 alt="Samsung Galaxy A16 5G" src="/images/blog_5-1.jpg"}
 
-::blog-sheet{.mt-3 .text-h5 .font-weight-bold .mb-3}
+::blog-sheet{.mt-3.text-h5.font-weight-bold.mb-3}
 {{ $doc.title }}
 ::
 
@@ -56,6 +55,10 @@ Galaxy A16 4G มี RAM 4GB และความจุ 128GB พร้อม�
 ข้อมูลดังกล่าวระบุว่า Samsung Galaxy A16 4G จะวางจำหน่ายในเดือนพฤศจิกายน (หมายเหตุ: วางจำหน่ายในฝรั่งเศส แต่คาดว่าจะวางจำหน่ายทั่วทั้งยุโรป) โทรศัพท์รุ่นนี้จะมีให้เลือก 3 สี คือ สีเทา สีเขียว และสีน้ำเงิน
 ::
 
-::blog-link{link="https://www.gsmarena.com/samsung_quietly_unveils_galaxy_a16_4g_also_with_6_years_of_support-news-64972.php" .my-3}
+::blog-link
+---
+class: my-3
+link: https://www.gsmarena.com/samsung_quietly_unveils_galaxy_a16_4g_also_with_6_years_of_support-news-64972.php
+---
 ที่มา : GSMArena
 ::
