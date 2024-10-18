@@ -4,6 +4,12 @@ import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
+  app: {
+    head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+    },
+  },
   routeRules: {
     "/": { prerender: true },
   },
@@ -14,6 +20,7 @@ export default defineNuxtConfig({
     api: {
       baseURL: "/api/_blogs",
     },
+    contentHead: false,
   },
   modules: [
     "@nuxt/content",

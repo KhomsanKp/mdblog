@@ -1,57 +1,63 @@
 ---
-title: "New iPad mini comes with downgraded A17 Pro chipset"
-description: "Apple released the 7th generation of iPad mini, which was introduced with an A17 Pro chipset, also seen on the iPhone 15 Pro and iPhone 15 Pro Max. However, the official website states something different - the tablet has only a 5-core GPU, which seems like a downgraded version of the A17 Pro."
+title: กระทรวงพาณิชย์สหรัฐฯ กำลังสอบสวน TSMC ในฐานะผู้จัดหาชิปให้กับ Huawei
+description: หลังจากรายงานผลประกอบการรายไตรมาสที่ทำลายสถิติ TSMS พบว่าตนเองอยู่ภายใต้การสอบสวนอย่างต่อเนื่องจากกระทรวงพาณิชย์ของสหรัฐฯ การสอบสวนจะพิจารณาความเป็นไปได้ที่ TSMC จะจัดหาชิปสมาร์ทโฟนและ AI ให้กับ Huawei แม้ว่าจะมีการห้ามอยู่ก็ตาม รายงานฉบับใหม่จาก The Information ระบุว่ากระทรวงพาณิชย์ได้ติดต่อ TSMS เพื่อสอบถามว่า TSMS จัดหาชิปเซ็ตให้กับ Huawei โดยตรงหรือโดยอ้อม
 image:
-  src: "/blogs/blog2-1.jpg"
-  alt: "New iPad mini"
+  src: /images/blog_2-1.jpg
+  alt: TSMC Huawei
   width: 400
   height: 300
 head:
   meta:
-    - name: "keywords"
-      content: "new ipad mini"
-    - name: "robots"
-      content: "index, follow"
-    - name: "author"
-      content: "MDBlog"
-    - name: "copyright"
-      content: "© 2024 mdblog"
+    - name: title
+      content: กระทรวงพาณิชย์สหรัฐฯ กำลังสอบสวน TSMC ในฐานะผู้จัดหาชิปให้กับ Huawei
+    - name: description
+      content: หลังจากรายงานผลประกอบการรายไตรมาสที่ทำลายสถิติ TSMS พบว่าตนเองอยู่ภายใต้การสอบสวนอย่างต่อเนื่องจากกระทรวงพาณิชย์ของสหรัฐฯ การสอบสวนจะพิจารณาความเป็นไปได้ที่ TSMC จะจัดหาชิปสมาร์ทโฟนและ AI ให้กับ Huawei แม้ว่าจะมีการห้ามอยู่ก็ตาม รายงานฉบับใหม่จาก The Information ระบุว่ากระทรวงพาณิชย์ได้ติดต่อ TSMS เพื่อสอบถามว่า TSMS จัดหาชิปเซ็ตให้กับ Huawei โดยตรงหรือโดยอ้อม
+    - name: robots
+      content: index, follow
+    - name: author
+      content: Khomsan
+    - name: copyright
+      content: © 2024 mdblog
 
-id: "blog2"
-imageUrl: "/blogs/blog2-1.jpg"
-category: "tablet"
-createDate: "17 ตุลาคม 2567"
-author: "MD_0910"
+id: blog_2
+imageUrl: /images/blog_2-1.jpg
+category: technology
+createDate: 18 ตุลาคม 2567
+author: Khomsan
 ---
 
-:blog-ad{:data='[{"src" : "/blogs/blog2-1.jpg", "link": "https://s.shopee.co.th/LVI5mxDsy"}, {"src": "/blogs/blog2-2.jpg", "link": "https://s.shopee.co.th/LVI5mxDsy"}]'}
+:blog-image{src="/images/blog_2-1.jpg" alt="TSMC Huawei" .my-5}
 
-::blog-sheet{.mb-3}
-
-## {{$doc.title}}
-
+::blog-sheet{.mt-3 .text-h5 .font-weight-bold .mb-3}
+{{ $doc.title }}
 ::
 
 ::blog-sheet
-[Apple released the 7th generation of iPad mini, which was introduced with an A17 Pro chipset, also seen on the iPhone 15 Pro and iPhone 15 Pro Max. However, the official website states something different - the tablet has only a 5-core GPU, which seems like a downgraded version of the A17 Pro.]{.text-subtitle}
+{{ $doc.description }}
 ::
 
-:blog-image{imageSrc="/blogs/blog2-2.jpg" .my-5}
+:blog-image{src="/images/blog_2-2.jpg" alt="TSMC Huawei" .my-5}
 
-::blog-sheet{.my-2}
-Chipsets like these are often called binned because they do not pass the same quality control process during manufacturing. It is highly possible that the version with a 6-core CPU and 5-core GPU was not powerful enough for the iPhones, but there was a big enough batch to equip the new iPads.
+::blog-sheet{.mt-5}
+ย้อนกลับไปในปี 2020 รัฐบาลสหรัฐฯ ได้สั่งห้าม Huawei ซื้อชิปที่ผลิตโดยใช้อุปกรณ์ของสหรัฐฯ เนื่องจากข้อกังวลด้านความมั่นคงของชาติ นอกจากนี้ การสั่งห้ามครั้งเดียวกันนี้ยังป้องกันไม่ให้ Huawei ซื้ออุปกรณ์ผลิตชิปเซ็ต ซึ่งทำให้ความเป็นไปได้ในการจัดหาชิปสำหรับอุปกรณ์ของตนถูกจำกัดลงไปอีก
 ::
+
+:blog-image{src="/images/blog_2-3.jpg" alt="TSMC Huawei" .my-5}
 
 ::blog-sheet
-We also have to point out that Apple discontinued the iPhone 15 Pro and Pro Max after launching the 16 Pro duo, meaning there might be an extra couple of chips initially set aside for the phones.
+การสืบสวนครั้งใหม่นี้มุ่งเน้นไปที่ Kirin 9000 ที่พบในซีรีย์ Mate 60 เช่นเดียวกับโปรเซสเซอร์ Ascend AI ใหม่ของ Huawei ซึ่งทั้งสองตัวมีส่วนประกอบที่ Huawei ไม่ควรเข้าถึงได้ภายใต้การห้ามที่กำลังดำเนินอยู่
 ::
 
-:blog-image{imageSrc="/blogs/blog2-3.jpg" imageAlt='New iPad mini' .my-5}
-
-::blog-sheet{.mb-2}
-The chip would still perform well, just with one core deactivated to keep up with performance. Given that it is the A17 Pro, we expect the iPad mini (2024) to have Apple Intelligence with iOS 18.1 once it launches. The tablet is up for pre-order with a starting price of $499, and sales will begin on October 23.
+::blog-sheet{.mt-3}
+Huawei อ้างว่าชิปใหม่ทั้งหมดของตนมาจากบริษัท Semiconductor Manufacturing International Corp (SMIC) ของจีน แต่เราก็ได้เห็นรายงานที่เน้นว่าชิป Kirin อีกตัวหนึ่ง - Kirin 9006C ที่ใช้ในแล็ปท็อป Qingyan L450 ของ Huawei นั้น แท้จริงแล้วผลิตโดย TSMC
 ::
 
-::blog-link{link="https://www.apple.com/ipad-mini/specs/"}
-ที่มา : GSMarena
+:blog-image{src="/images/blog_2-4.jpg" alt="TSMC Huawei" .my-5}
+
+::blog-sheet
+TSMC responded to the ongoing Commerce Department probe with an official statement claiming it is a law-abiding company and will “take prompt action to ensure compliance, including conducting investigations and proactively communicating with relevant parties including customers and regulatory authorities as necessary”.
+::
+
+::blog-link{link="https://www.gsmarena.com/us_commerce_department_probing_tsmc_as_suspected_chip_supplier_to_huawei_-news-64978.php" .my-3}
+ที่มา : GSMArena
 ::

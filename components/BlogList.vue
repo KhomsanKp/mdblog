@@ -1,5 +1,5 @@
 <template>
-    <v-data-iterator :items="props.blogsList" :items-per-page="3" :search="search">
+    <v-data-iterator :items="props.blogsList" :items-per-page="10" :search="search">
         <!-- <template v-slot:header>
             <v-toolbar class="px-2">
                 <v-text-field v-model="search" density="comfortable" placeholder="Search"
@@ -13,13 +13,16 @@
                 <v-row dense>
                     <v-col v-for="item in items" :key="item.id" cols="12" sm="6" md="6">
                         <v-card class="pb-3" border flat width="100%">
-                            <v-img :src="item.raw.imageUrl" height="300" cover></v-img>
+                            <v-img :src="item.raw.imageUrl" max-height="500" cover></v-img>
 
-                            <v-list-item :subtitle="item.raw.description" class="mb-2 text-justify">
-                                <template v-slot:title>
-                                    <strong class="text-h6 mb-2">{{ item.raw.title }}</strong>
-                                </template>
-                            </v-list-item>
+                            <v-card variant="text" height="100">
+
+                                <v-list-item :subtitle="item.raw.description" class="mb-2 text-justify">
+                                    <template v-slot:title>
+                                        <strong class="text-h6 mb-2">{{ item.raw.title }}</strong>
+                                    </template>
+                                </v-list-item>
+                            </v-card>
 
                             <p class="text-caption mt-2 ml-5 font-italic text-teal-lighten-1">
                                 author: {{ item.raw.author }}

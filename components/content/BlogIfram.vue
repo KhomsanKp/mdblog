@@ -1,9 +1,7 @@
 <template>
-
-    <div class="video-container my-5">
+    <v-sheet class="video-container my-5">
         <iframe class="video pa-0 ma-0" :src="src" frameborder="0" allowfullscreen> </iframe>
-    </div>
-
+    </v-sheet>
 </template>
 
 <script setup>
