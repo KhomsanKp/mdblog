@@ -13,7 +13,7 @@
                 <v-row dense>
                     <v-col v-for="item in items" :key="item.id" cols="12" sm="6" md="6">
                         <v-card class="pb-3" border flat width="100%">
-                            <v-img :src="item.raw.imageUrl" max-height="500" cover></v-img>
+                            <v-img :src="item.raw.imageUrl" height="200" cover></v-img>
 
                             <v-card variant="text" height="100">
 

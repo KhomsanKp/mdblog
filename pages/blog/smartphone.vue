@@ -1,10 +1,10 @@
 <template>
     <div>
         <v-sheet class="elevation-1 mt-5 mb-3">
-            <h1 class="text-h5 font-weight-bold text-grey-darken-1 pl-6 py-3">เทคโนโลยี</h1>
+            <h1 class="text-h5 font-weight-bold text-grey-darken-1 pl-6 py-3">SMARTPHONE</h1>
         </v-sheet>
 
-        <BlogList v-if="tech.length > 0" :blogs-list="tech" />
+        <BlogList v-if="smartphone.length > 0" :blogs-list="smartphone" />
 
         <v-sheet v-else class="w-100 py-10 text-center bg-amber-lighten-5 rounded-lg">
             <p>No documents</p>
@@ -15,5 +15,5 @@
 <script setup>
 import BlogList from '~/components/BlogList.vue';
 
-const { data: tech } = await useAsyncData('tech', () => queryContent('_blogs').where({ category: 'technology' }).find())
+const { data: smartphone } = await useAsyncData('smartphone', () => queryContent('_blogs').where({ category: 'smartphone' }).find())
 </script>

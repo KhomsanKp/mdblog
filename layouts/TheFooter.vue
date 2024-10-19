@@ -1,5 +1,5 @@
 <template>
-    <v-footer class="bg-amber-lighten-2">
+    <v-footer class="bg-grey-darken-3">
         <v-row justify="center" no-gutters>
             <v-btn v-for="(link, idx) in links" :key="idx" :to="link.value" class="mx-2" color="amber" variant="text"
                 rounded="xl">
@@ -7,7 +7,7 @@
                     {{ link.label }}
                 </span>
             </v-btn>
-            <v-col class="text-center mt-4" cols="12">
+            <v-col class="text-center mt-4 text-amber" cols="12">
                 copy right {{ new Date().getFullYear() }} by <strong>MDBlog</strong>
             </v-col>
         </v-row>
@@ -23,9 +23,21 @@ export default {
                 value: '/'
             },
             {
-                label: 'เกี่ยวกับเรา',
-                value: '/about'
+                label: 'เทคโนโลยี',
+                value: '/blog/tech'
             },
+            {
+                label: 'Smartphone',
+                value: '/blog/smartphone'
+            },
+            {
+                label: 'สัตว์เลี้ยง',
+                value: '/blog/pets'
+            },
+            // {
+            //     label: 'เกี่ยวกับเรา',
+            //     value: '/about'
+            // },
         ],
     }),
 }

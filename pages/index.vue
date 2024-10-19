@@ -1,10 +1,10 @@
 <template>
     <div>
-        <v-sheet class="elevation-1 bg-amber-lighten-5 mt-5 mb-3" rounded="lg">
-            <h1 class="text-h5 font-weight-bold text-amber pl-6 py-3">บทความ</h1>
+        <v-sheet class="elevation-1 mt-5 mb-3">
+            <h1 class="text-h5 font-weight-bold text-grey-darken-1 pl-6 py-3">News top 10</h1>
         </v-sheet>
 
-        <BlogList :blogs-list="blogs" />
+        <BlogList v-if="blogs.length > 0" :blogs-list="blogs" />
 
         <v-container class="my-3">
             <v-sheet>
@@ -17,8 +17,6 @@
 
 <script setup>
 const { data: blogs } = await useAsyncData('blogs', () => queryContent('/_blogs').find())
-
-console.log(blogs.value)
 
 useHead({
     title: 'MDBblog',
