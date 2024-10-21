@@ -1,6 +1,7 @@
 {
-  "brand": "Apple",
-  "model": "iphone 16",
+  "id": "samsungGalaxyA16",
+  "brand": "Samsung",
+  "model": "Galaxy a16",
   "imageUrl": "/smartphone/samsung-galaxy-a16-lte.jpg",
   "network": {
     "technology": "GSM / HSPA / LTE"
@@ -61,7 +62,7 @@
     "charging": "25W wired"
   },
   "misc": {
-    "colos": "Gray, water green, midnight blue",
+    "colors": "Gray, water green, midnight blue",
     "model": "SM-A165F, SM-A165F/DS, SM-A165M, SM-A165M/DS",
     "price": "About 200 EUR"
   }

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-app-bar scroll-behavior="hide" color="teal">
+        <v-app-bar scroll-behavior="hide" color="teal-lighten-1">
             <v-app-bar-nav-icon variant="text" color="amber-darken-1"
                 @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
@@ -27,7 +27,7 @@
 
                 <v-list-group value="Blogs">
                     <template v-slot:activator="{ props }">
-                        <v-list-item v-bind="props" prepend-icon="mdi-post" title="บทความ"></v-list-item>
+                        <v-list-item v-bind="props" prepend-icon="mdi-post" title="Blogs"></v-list-item>
                     </template>
 
                     <v-list-item v-for="([title, icon, link], i) in blogList" :key="i" :prepend-icon="icon"
@@ -54,16 +54,27 @@ export default {
     data: () => ({
         drawer: false,
         group: null,
-        open: ['Blogs'],
+        open: ['Blogs', 'Smartphone'],
         blogList: [
-            ['เทคโนโลยี', 'mdi-account-multiple-outline', '/blog/tech'],
+            ['เทคโนโลยี', 'mdi-laptop', '/blog/tech'],
             ['สมาร์ทโฟน', 'mdi-cellphone', '/blog/smartphone'],
             ['สัตว์เลี้ยง', 'mdi-paw', '/blog/pets'],
         ],
         smartphoneList: [
-            ['All brand', 'mdi-paw', '/smartphone'],
-            ['Apple', 'mdi-account-multiple-outline', '/smartphone/apple'],
-            ['Samsung', 'mdi-cellphone', '/smartphone/samsung'],
+            ['All brand', 'mdi-cellphone', '/smartphone'],
+            ['Apple', 'mdi-apple', '/smartphone/apple'],
+            ['Samsung', 'mdi-android', '/smartphone/samsung'],
+            ['Xiaomi', 'mdi-android', '/smartphone/xiaomi'],
+            ['Redmi', 'mdi-android', '/smartphone/redmi'],
+            ['Poco', 'mdi-android', '/smartphone/poco'],
+            ['Oppo', 'mdi-android', '/smartphone/oppo'],
+            ['Vivo', 'mdi-android', '/smartphone/vivo'],
+            ['Realme', 'mdi-android', '/smartphone/realme'],
+            ['OnePlus', 'mdi-android', '/smartphone/oneplus'],
+            ['Infinix', 'mdi-android', '/smartphone/infinix'],
+            ['Techno', 'mdi-android', '/smartphone/techno'],
+
+
         ],
     }),
 

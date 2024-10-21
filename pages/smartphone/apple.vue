@@ -1,6 +1,5 @@
 <template>
     <div>
-
         <v-sheet class="elevation-1 mt-5 mb-3">
             <h1 class="text-h5 font-weight-bold text-grey-darken-1 pl-6 py-3">Apple</h1>
         </v-sheet>
@@ -17,5 +16,5 @@
 
 <script setup>
 import SmartphoneList from '~/components/SmartphoneList.vue';
-const { data: apple } = await useAsyncData('apple', () => queryContent('_smartphone', 'apple', 'iphone').find())
+const { data: apple } = await useAsyncData('apple', () => queryContent('_smartphone', 'apple').find())
 </script>

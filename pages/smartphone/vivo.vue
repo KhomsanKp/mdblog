@@ -1,11 +1,11 @@
 <template>
     <div>
         <v-sheet class="elevation-1 mt-5 mb-3">
-            <h1 class="text-h5 font-weight-bold text-grey-darken-1 pl-6 py-3">Samsung</h1>
+            <h1 class="text-h5 font-weight-bold text-grey-darken-1 pl-6 py-3">Vivo</h1>
         </v-sheet>
 
         <v-card variant="text" class="mt-5">
-            <SmartphoneList v-if="samsung.length > 0" :item-list="samsung" />
+            <SmartphoneList v-if="vivo.length > 0" :item-list="vivo" />
 
             <v-sheet v-else class="w-100 py-10 text-center bg-amber-lighten-5 rounded-lg">
                 <p>No documents</p>
@@ -16,5 +16,5 @@
 
 <script setup>
 import SmartphoneList from '~/components/SmartphoneList.vue';
-const { data: samsung } = await useAsyncData('samsung', () => queryContent('_smartphone', 'samsung').find())
-</script>
+const { data: vivo } = await useAsyncData('vivo', () => queryContent('_smartphone', 'vivo').find())
+</script>redmi
